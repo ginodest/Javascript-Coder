@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CALCU3D</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container  ">
+                <a class="navbar-brand" href="#">CALCU3D</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#">Informacion</a>
+                        <a class="nav-link" href="#">Uso</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="h-100">
+        <div class="container mt-5">
+            <h1>Calculos de costes de impresiones en 3D</h1>
+        </div>
+        
+        <form class="container mt-5 border">
+            <div class="mb-3 mt-3">
+                <label for="exampleInputEmail1" class="form-label">Tiempo de impresion en Hs</label>
+                <input type="number" placeholder="Ejemplo: 3:15hs = 3.15 // 26 min = 0.26" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Peso de masa en Kg</label>
+                <input type="number" placeholder="Ejemplo: 1.250kg = 1.250 // 180gr = 0.180" class="form-control" id="exampleInputPassword1">
+
+            </div>
+            <label for="exampleInputPassword1" class="form-label">Filamento</label>
+            <select class="form-select mb-3" aria-label="Default select example">
+                <option selected>Seleccionar tipo de filamento</option>
+                <option value="1">PLA</option>
+                <option value="2">PETG</option>
+                <option value="3">ABS</option>
+                <option value="3">TPU</option>
+            </select>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Porcentaje de Ganancias</label>
+                <input type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-danger mb-2">Calcular</button>
+        </form>
+
+    </main>
+    <footer class="container-fluid p-2 text-center bg-warning">
+        <h6>Todos los derechos reservados ~ Ginodest</h6>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Calculos.js"></script>
+</body>
+</html>
