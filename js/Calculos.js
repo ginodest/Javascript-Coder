@@ -1,4 +1,4 @@
-
+alert("hola")
 // definimos la clase del objeto..
 class filamento {
     constructor(nombre,precioKg){
@@ -16,6 +16,7 @@ let filamentos = [filamento1,filamento2,filamento3,filamento4]
 
 // creamos la funcion para los calculos
 let condicion = prompt("Desea realizar los calculos? (si/no)").toLocaleLowerCase();
+
 function coste(filamento){
     let peso = prompt("ingrese el Peso de la pieza en KG");
     let filamento = prompt("ingrese el tipo de filamento (0 PLA - 1 ABS - 2 PETG - 3 TPU)");
@@ -36,25 +37,16 @@ function coste(filamento){
 
     while (condicion != 'no'){
         coste(filamento);
-    alert("costo total de la impresion es de: " +"$"+ costeTotal + " pesos");
-    condicion = prompt("Desea realizar Otro calculo? (si/no)").toLocaleLowerCase();
+        alert("costo total de la impresion es de: " +"$"+ costeTotal + " pesos");
+        condicion = prompt("Desea realizar Otro calculo? (si/no)").toLocaleLowerCase();
     }
     
 
 //                       ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ codigo viejo ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
 
 //Declaramos algunas variables para usarlas luego
-let pla = 3500;
-let abs = 4330;
-let petg = 3720;
-let tpu = 3850;
+
 //tomamos como un gasto fijo que en electrecidad tenemos un consumo de 26.05 kw/H
 let costesLuz = 26.05;
 //tomamos como consumo medio de la impresora un 0.50 kw
 let consumoMedio = 0.50
-
-
-
-
-
-debugger
