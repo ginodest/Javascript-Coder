@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "PLA",
+        "precio": 4700
+    },
+    {
+        "nombre": "ABS",
+        "precio": 6650
+    },
+    {
+        "nombre": "PETG",
+        "precio": 5600
+    },
+    {
+        "nombre": "TPU",
+        "precio": 5500
+    }
+]

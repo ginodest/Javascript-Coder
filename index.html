@@ -52,10 +52,11 @@
                     <option value="TPU">TPU</option>
                 </select>
             </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-success mb-3">Calcular</button>
+            <div class="text-center d-flex flex-column">
+                <button  type="submit" class="btn btn-success mb-3 m-auto">Calcular</button>
             </div>
         </form>
+        <button id="jsonBtn" class=" mb-3 btn btn-success m-auto">Consultar precio de Filamento</button>
         <!-- DIV DONDE VAN LOS RESULTADOS -->
         <div id="resultados" class="row row-cols-1 row-cols-md-4 g-4"></div>
         <div class="container text-center col mb-5 mt-5">
@@ -67,6 +68,7 @@
         <h6>Todos los derechos reservados ~ Ginodest</h6>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/calculos.js"></script>
 </body>
 </html>
